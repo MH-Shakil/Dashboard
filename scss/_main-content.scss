@@ -253,6 +253,7 @@
         overflow-y: scroll;
         overflow-x: hidden;
         width: 355px;
+
         .single-mid-one-content {
           background: $white;
           margin: 10px;
@@ -321,6 +322,7 @@
   }
   .main-mid-container {
     width: 355px !important;
+    margin-right: 7px;
   }
 }
 
@@ -339,15 +341,15 @@
     border-radius: 6px;
     margin-right: 10px;
   }
-  .single-bottom-win{
+  .single-bottom-win {
     color: $text-color4;
     border: 1px solid $text-color4;
   }
-  .single-bottom-lost{
+  .single-bottom-lost {
     color: $text-color3;
     border: 1px solid $text-color3;
   }
-  .single-bottom-pipe{
+  .single-bottom-pipe {
     color: $text-color5;
     border: 1px solid $text-color5;
   }
