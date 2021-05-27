@@ -1,0 +1,35 @@
+
+// Search Input
+.single-input {
+  .search-input {
+    background-color: $dark-gray !important;
+    box-shadow: inset -4px -4px 2px #ffffff,
+      inset 4px 4px 2px rgba(8, 20, 36, 0.1) !important;
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+    width: 300px !important;
+    padding: 5px 15px !important;
+    height: 30px !important;
+    position: relative;
+    &::placeholder {
+      color: $gray;
+    }
+  }
+  .search-field {
+    position: relative;
+    &::after {
+      position: absolute;
+      font-family: "Material Icons";
+      content: "search";
+      font-size: 20px;
+      color: $dark-blue;
+      right: 12px;
+      -webkit-font-feature-settings: "liga";
+    }
+  }
+}
+
+

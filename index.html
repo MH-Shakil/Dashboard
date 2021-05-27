@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dashboard</title>
+
+    <!-- Author Meta -->
+    <meta name="author" content="" />
+
+    <!-- Meta Description -->
+    <meta name="description" content="" />
+
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="" />
+
+    <!-- *********** CSS Link *********** -->
+    <!--Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="vendor/css/materialize.min.css"
+      media="screen,projection"
+    />
+    
+    <link rel="stylesheet" href="dist/css/main.css" />
+
+    <!-- *********** Fonts *********** -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ================== Start Header ================== -->
+
+    <div class="header">
+      <nav>
+        <div class="nav-wrapper navbar-bg">
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+              <div class="single-input">
+                <div class="input-field search-field">
+                  <input placeholder="Search" id="search" type="text" class="validate search-input">
+                </div>
+              </div>
+            </li>
+            <li> 
+              <div class="header-icon-btn-group">
+                <a class="btn-floating btn-medium waves-effect waves-light light-green-btn"><i class="material-icons">phone</i></a>
+                <a class="btn-floating btn-medium waves-effect waves-light light-blue single-header-btn-icon"><i class="material-icons">add</i></a>
+                <a class="btn-floating btn-medium waves-effect waves-light light-blue single-header-btn-icon header-btn-icon-noti"><i class="material-icons">notifications_none</i><span class="noti-bage">9</span></a>
+                <a class="btn-floating btn-medium waves-effect waves-light light-blue"><i class="material-icons">help_outline</i></a>
+              </div>
+              
+            </li>
+            <li>
+              <div class="valign-wrapper user-info">
+                <img src="img/avater.png" alt="">
+                <div class="user-info-content">
+                    <h5>Admin</h5>
+                    <h6>admi@email.com</h6>
+                </div>
+                <i class="material-icons">expand_more</i></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="sidebar">
+      <ul>
+        <li>
+          <a class="sidebar-link valign-wrapper" href="#"><img class=" header-logo-icon" src="img/mask-logo.png" alt=""> <div class="nav-list-content white-text header-logo-content">Pypepro</div></a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#"><i class="single-nav-icon material-icons white-text">home</i><span class="nav-list-content white-text">Dashboard</span></a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#"><i class="single-nav-icon material-icons white-text">inbox</i><span class="nav-list-content white-text">Inbox</span></a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#"><i class="single-nav-icon material-icons white-text">attach_money</i><span class="nav-list-content white-text">Deals</span></a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#"><i class="single-nav-icon fa fa-calendar-o white-text" aria-hidden="true"></i><span class="nav-list-content white-text">Calender</span></a>
+        </li>
+
+        <li>
+          <a class="sidebar-link" href="#"><i class="single-nav-icon material-icons white-text">people</i><span class="nav-list-content white-text">Contacts</span></a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#"><i class="single-nav-icon fa fa-bullhorn white-text" aria-hidden="true"></i><span class="nav-list-content white-text">Marketing</span></a>
+        </li>
+
+        <li>
+          <a class="sidebar-link" href="#"><i class="single-nav-icon material-icons white-text">search</i><span class="nav-list-content white-text">Find New Leads</span></a>
+        </li>
+        
+        <li>
+          <a class="sidebar-link" href="#"><i class="single-nav-icon material-icons white-text">flash_on</i><span class="nav-list-content white-text">Triggers</span></a>
+        </li>
+
+        <li>
+          <a class="sidebar-link" href="#"><i class="single-nav-icon material-icons white-text">pie_chart</i><span class="nav-list-content white-text">Reporting</span></a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#"><i class="single-nav-icon material-icons white-text">settings</i><span class="nav-list-content white-text">Settings</span></a>
+        </li>
+
+        <li>
+          <a class="sidebar-link" href="#"><i class="single-nav-icon material-icons white-text">play_circle_filled</i><span class="nav-list-content white-text">Training</span></a>
+        </li>
+
+        <li>
+          <a class="sidebar-link" href="#"><i class="single-nav-icon material-icons white-text">person</i><span class="nav-list-content white-text">Reporting</span></a>
+        </li>
+        <li>
+          <a class="sidebar-link" href="#" id="menu-action">
+            <i class="single-nav-icon material-icons white-text"> sort</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ================== End Header ================== -->
+
+
+    <!-- ================== Main Content Start ================== -->
+      <div class="main-content">
+          <div class="row valign-wrapper main-content-upper-top ">
+            <div class="col m5">
+              <h4 class="upper-top-header ">Deal</h4>
+            </div>
+            <div class="col m7" >
+              <div class="upper-top-right-content valign-wrapper">
+                <div class="upper-top-icon-group ">
+                  <i class="material-icons upper-top-icon">format_list_bulleted</i>
+                  <i class="material-icons upper-top-icon">date_range</i>
+                  <i class="material-icons upper-top-icon">widgets</i>
+                  <i class="material-icons upper-top-icon">insert_chart</i>
+                </div>
+                <div class="single-button ">
+                  <a class="waves-effect waves-light btn valign-wrapper single-button-content"><i class="material-icons left single-button-icon">add</i>Create list</a>
+                </div> 
+                <div class="single-button ">
+                  <a class="waves-effect waves-light btn valign-wrapper single-button-content"><i class="material-icons left single-button-icon">settings</i>Settings</a>
+                </div> 
+                <a class="btn-floating btn-medium waves-effect waves-light single-header-btn-icon visibility-link"><i class="material-icons white visibility-icon">visibility_off</i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vehical Sell Area -->
+          <div class="vehical-sell-area">
+            <div class="left-area left">
+              <div class="single-select">
+                <select class="browser-default single-select-container">
+                  <option value="" disabled selected>Vehical Sell</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+              </div>
+              <div class="single-select">
+                <select class="browser-default single-select-container single-select-second">
+                  <option value="" disabled selected>Active</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+              </div>
+              <div class="single-date-picker">
+                <input type="text" class="datepicker datepicker-custom">
+              </div> 
+            </div>
+            <div class="right-area right">
+              <div class="single-input">
+                <div class="input-field search-field vehical-sell-input vehical-sell-s-input-outer">
+                  <input placeholder="Search" id="search" type="text" class="validate search-input vehical-sell-s-inner-input">
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+
+          <!-- Total Cost Area -->
+          
+            <p class="total-cost-area">Total Pipeline Value: <span>$20K</span> | Total Open Deals: <span>$20K</span>  | Total Won: <span>$0</span>  | Total Lost: <span>$0</span></p>
+
+            <!-- Main Body Content -->
+            <div class="main-body-content">
+                <div class="row main-body-top">
+                  <div class="col s3 main-top-container ">
+                    <div class="single-body-top-content">
+                      <div class="left-part">
+                        <h5 class="left-part-header">John do</h5>
+                        <div class="left-part-bottom">
+                          <h5 class="deal-text">1 Deal</h5>
+                        <div class="dot"></div>
+                        <h5 class="price">$1.2K</h5>
+                        </div>
+                        
+                      </div>
+                      <div class="right-part">
+                        <a class="btn-floating btn-medium waves-effect waves-light light-blue top-content-btn single-header-btn-icon"><i class="material-icons">add</i></a>
+                      </div>
+                        <img class="angle-img" src="img/angle.png" alt="">  
+                    </div>
+                  </div>
+                  <div class="col s3 main-top-container">
+                    <div class="single-body-top-content">
+                      <div class="left-part">
+                        <h5 class="left-part-header">John do</h5>
+                        <div class="left-part-bottom">
+                          <h5 class="deal-text">1 Deal</h5>
+                        <div class="dot"></div>
+                        <h5 class="price">$1.2K</h5>
+                        </div>
+                        
+                      </div>
+                      <div class="right-part">
+                        <a class="btn-floating btn-medium waves-effect waves-light light-blue top-content-btn single-header-btn-icon"><i class="material-icons">add</i></a>
+                      </div>
+                        <img class="angle-img" src="img/angle.png" alt="">  
+                    </div>
+                  </div>
+                  <div class="col s3 main-top-container">
+                    <div class="single-body-top-content">
+                      <div class="left-part">
+                        <h5 class="left-part-header">John do</h5>
+                        <div class="left-part-bottom">
+                          <h5 class="deal-text">1 Deal</h5>
+                        <div class="dot"></div>
+                        <h5 class="price">$1.2K</h5>
+                        </div>
+                        
+                      </div>
+                      <div class="right-part">
+                        <a class="btn-floating btn-medium waves-effect waves-light light-blue top-content-btn single-header-btn-icon"><i class="material-icons">add</i></a>
+                      </div>
+                        <img class="angle-img" src="img/angle.png" alt="">  
+                    </div>
+                  </div>
+                  <div class="col s3 main-top-container">
+                    <div class="single-body-top-content">
+                      <div class="left-part">
+                        <h5 class="left-part-header">John do</h5>
+                        <div class="left-part-bottom">
+                          <h5 class="deal-text">1 Deal</h5>
+                        <div class="dot"></div>
+                        <h5 class="price">$1.2K</h5>
+                        </div>
+                        
+                      </div>
+                      <div class="right-part">
+                        <a class="btn-floating btn-medium waves-effect waves-light light-blue top-content-btn single-header-btn-icon"><i class="material-icons">add</i></a>
+                      </div>
+                        <img class="angle-img" src="img/angle.png" alt="">  
+                    </div>
+                  </div>
+                  <div class="col s3 main-top-container">
+                    <div class="single-body-top-content">
+                      <div class="left-part">
+                        <h5 class="left-part-header">John do</h5>
+                        <div class="left-part-bottom">
+                          <h5 class="deal-text">1 Deal</h5>
+                        <div class="dot"></div>
+                        <h5 class="price">$1.2K</h5>
+                        </div>
+                        
+                      </div>
+                      <div class="right-part">
+                        <a class="btn-floating btn-medium waves-effect waves-light light-blue top-content-btn single-header-btn-icon"><i class="material-icons">add</i></a>
+                      </div>
+                        <img class="angle-img" src="img/angle.png" alt="">  
+                    </div>
+                  </div>
+                  <div class="col s3 main-top-container">
+                    <div class="single-body-top-content">
+                      <div class="left-part">
+                        <h5 class="left-part-header">John do</h5>
+                        <div class="left-part-bottom">
+                          <h5 class="deal-text">1 Deal</h5>
+                        <div class="dot"></div>
+                        <h5 class="price">$1.2K</h5>
+                        </div>
+                        
+                      </div>
+                      <div class="right-part">
+                        <a class="btn-floating btn-medium waves-effect waves-light light-blue top-content-btn single-header-btn-icon"><i class="material-icons">add</i></a>
+                      </div>
+                        <img class="angle-img" src="img/angle.png" alt="">  
+                    </div>
+                  </div>
+                </div>
+             <div class="row main-body-mid-content">
+               <div class="col s3  main-mid-container">
+                <div class="single-mid-content">
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+               </div>
+               <div class="col s3 main-mid-container">
+                <div class="single-mid-content-second">
+                  <div class="second-content">
+                    <h5>No Deal in This Stage</h5>
+                  <div class="mid-content-second-bottom">
+                    <a class="btn-floating btn-medium waves-effect waves-light light-blue top-content-btn single-header-btn-icon"><i class="material-icons">add</i></a>
+                    <div class="add-deal">Add Deal</div>
+                  </div>
+                  </div>
+                  
+                </div>
+                
+               </div>
+               <div class="col s3  main-mid-container">
+                <div class="single-mid-content">
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+               </div>
+               <div class="col s3 main-mid-container">
+                <div class="single-mid-content">
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+               </div>
+               <div class="col s3  main-mid-container">
+                <div class="single-mid-content">
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+               </div>
+               <div class="col s3  main-mid-container">
+                <div class="single-mid-content">
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="single-mid-one-content">
+                    <h5 class="mid-content-header">John Do <span>($1.2K)</span></h5>
+                    <div class="mid-content-b-text">Time in Stage : 1 Week Ago</div>
+                    <div class="icon-group-container">
+                      <div class="icon-group">
+                        <div class="icon-container">
+                          <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon2.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon3.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon5.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon6.png" alt="">
+                        </div>
+                        <div class="icon-container">
+                          <img src="img/icon7.png" alt="">
+                        </div>
+                      </div>
+                      <div class="icon-right">
+                        <div class="icon-right-container icon-container">
+                          <img src="img/icon8.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+               </div>
+             </div>
+            </div>
+            <!-- Bottom Button -->
+            <div class="main-body-bottom">
+             
+                <a class="waves-effect waves-light btn single-bottom-button"><i class="material-icons btn-btm-icon">delete</i>Delete</a>
+                <a class="waves-effect waves-light btn single-bottom-button single-bottom-win"><i class="material-icons btn-btm-icon">directions_run</i>Win</a>
+                <a class="waves-effect waves-light btn single-bottom-button single-bottom-lost"><i class="material-icons btn-btm-icon">thumb_down</i>Lost</a>
+                <a class="waves-effect waves-light btn single-bottom-button single-bottom-pipe"><i class="material-icons btn-btm-icon">delete</i>Pipeline</a>
+          
+            </div>
+  
+      </div>
+      <!-- ================== Main Content End ================== -->
+      
+
+
+    <!-- *********** Js Link *********** -->
+    <script src="vendor/js/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/js/materialize.min.js"></script>
+    <script src="dist/js/main.js"></script>
+  </body>
+</html>

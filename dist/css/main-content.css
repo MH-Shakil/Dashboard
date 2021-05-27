@@ -1,0 +1,14 @@
+.main {
+  position: relative;
+  display: block;
+  top: 50px;
+  left: 0;
+  padding: 30px;
+  padding-left: 75px;
+  transition: all 0.2s ease-in-out;
+}
+
+.main.active {
+  padding-left: 275px;
+  transition: all 0.2s ease-in-out;
+}

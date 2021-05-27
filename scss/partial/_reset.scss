@@ -1,0 +1,74 @@
+/* =================================== */
+/*  Basic Style 
+/* =================================== */
+
+body {
+  // color: $text-color;
+  font-family: $primary-font;
+  background-color: $main-bg;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+select {
+  display: block;
+}
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+  outline: 0;
+  // color: $black;
+}
+//
+
+/**
+ *  Typography
+ *
+ **/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1em;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 400;
+  // color: $black;
+}
+
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 14px;
+}
+
+td,
+th {
+  border-radius: 0px;
+}
