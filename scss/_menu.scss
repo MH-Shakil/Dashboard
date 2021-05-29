@@ -88,6 +88,7 @@
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   overflow-y: scroll;
+  overflow-x: hidden;
   &:hover,
   &.active,
   &.hovered {
