@@ -587,7 +587,7 @@ th {
   -moz-border-radius: 6px !important;
   -ms-border-radius: 6px !important;
   -o-border-radius: 6px !important;
-  height: 42px;
+  height: 42px !important;
   margin-bottom: 0;
 }
 
