@@ -327,11 +327,11 @@
 }
 
 // bottom button
+
 .main-body-bottom {
   padding-top: 15px;
   display: flex;
   .single-bottom-button {
-    width: 368px;
     display: flex;
     justify-content: center;
     color: $text-color3;
@@ -339,7 +339,6 @@
     box-shadow: none;
     border: 1px solid $text-color3;
     border-radius: 6px;
-    margin-right: 10px;
   }
   .single-bottom-win {
     color: $text-color4;
